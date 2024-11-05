@@ -6,5 +6,13 @@ public abstract class Rango {
         this.nivel = nivel;
     }
 
+    public int getNivel() {
+        return nivel;
+    }
+
+    public void setNivel(int nivel) {
+        this.nivel = nivel;
+    }
+
     public abstract void realizarAccion();
 }
