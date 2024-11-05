@@ -5,7 +5,7 @@ public class Soldado extends Rango{
 
     //Constructor
     public Soldado(int nivel, String nombre, String id, String rango) {
-        super(nivel);
+        super(1);
         this.nombre = nombre;
         this.id = id;
         this.rango = rango;
