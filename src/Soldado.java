@@ -1,14 +1,14 @@
 public class Soldado extends Rango{
     private String nombre;
     private String id; 
-    private String rango;
+    
 
     //Constructor
-    public Soldado(int nivel, String nombre, String id, String rango) {
+    public Soldado(int nivel, String nombre, String id) {
         super(1);
         this.nombre = nombre;
         this.id = id;
-        this.rango = rango;
+        
     }
 
     public String getNombre() {
@@ -27,19 +27,14 @@ public class Soldado extends Rango{
         this.id = id;
     }
 
-    public String getRango() {
-        return rango;
-    }
 
-    public void setRango(String rango) {
-        this.rango = rango;
-    }
+    
 
     public void mostrarInformacion(){
         System.out.println("-Informacion del soldado:"+ id+"-" );
         System.out.println("Nombre: "+ nombre);
         System.out.println("Id: "+ id);
-        System.out.println("Rango: "+ rango);
+        
     }
 
     //Implementacion del metodo abstracto
