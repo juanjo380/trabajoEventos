@@ -1,4 +1,3 @@
-package Rango;
 public abstract class Rango {
     protected int nivel;
 

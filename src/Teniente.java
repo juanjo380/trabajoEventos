@@ -1,7 +1,3 @@
-package CategoriasMilitares;
-import MisionesMilitares.OperacionesMilitares;
-import Rango.Rango;
-
 public class Teniente extends Rango implements OperacionesMilitares{
     private String unidad;
 
@@ -19,7 +15,7 @@ public class Teniente extends Rango implements OperacionesMilitares{
     @Override
     public void reportarEstado() {
         // TODO Auto-generated method stub
-        System.out.println("Estado del teniente: Liderando unidad " + unidad);
+        System.out.println("Estado del teniente: Liderando unidad" + unidad);
     }
 
     @Override

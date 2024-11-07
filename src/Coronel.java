@@ -1,7 +1,3 @@
-package CategoriasMilitares;
-import MisionesMilitares.OperacionesMilitares;
-import Rango.Rango;
-
 public class Coronel extends Rango implements OperacionesMilitares {
     private String estrategia;
 
