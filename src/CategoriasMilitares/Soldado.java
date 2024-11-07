@@ -1,3 +1,6 @@
+package CategoriasMilitares;
+import Rango.Rango;
+
 public class Soldado extends Rango{
     private String nombre;
     private String id; 
@@ -41,7 +44,7 @@ public class Soldado extends Rango{
     @Override
     public void realizarAccion() {
         // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'realizarAccion'");
+        System.out.println("Soldado en posición de ataque");
     }
 
     
