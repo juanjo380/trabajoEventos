@@ -4,6 +4,7 @@ import Rango.Rango;
 public class Soldado extends Rango{
     private String nombre;
     private String id; 
+    private static int contadorSoldados = 0;
     
 
     //Constructor
@@ -11,9 +12,14 @@ public class Soldado extends Rango{
         super(1);
         this.nombre = nombre;
         this.id = id;
-        
-    }
-
+            contadorSoldados++;
+        }
+    
+        public static int getContadorSoldados() {
+            return contadorSoldados;
+        } 
+    
+    
     public String getNombre() {
         return nombre;
     }
@@ -28,6 +34,8 @@ public class Soldado extends Rango{
 
     public void setId(String id) {
         this.id = id;
+
+    
     }
 
 
