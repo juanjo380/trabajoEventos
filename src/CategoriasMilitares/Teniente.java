@@ -6,7 +6,7 @@ public class Teniente extends Rango implements OperacionesMilitares{
     private String unidad;
 
     public Teniente(int nivel, String unidad) {
-        super(2);
+        super(3);
         this.unidad = unidad;
     }
 

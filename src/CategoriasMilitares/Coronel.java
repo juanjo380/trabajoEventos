@@ -6,7 +6,7 @@ public class Coronel extends Rango implements OperacionesMilitares {
     private String estrategia;
 
     public Coronel(String estrategia) {
-        super(4);
+        super(2);
         this.estrategia = estrategia;
     }
 

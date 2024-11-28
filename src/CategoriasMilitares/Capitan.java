@@ -7,7 +7,7 @@ public class Capitan extends Rango implements OperacionesMilitares{
     
 
     public Capitan(int nivel, int cantidadSoldadosBajoSuMando) {
-        super(3);
+        super(4);
         this.cantidadSoldadosBajoSuMando = cantidadSoldadosBajoSuMando;
     }
 

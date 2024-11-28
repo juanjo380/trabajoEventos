@@ -4,7 +4,7 @@ import Rango.Rango;
 
 public class SoldadoRaso extends Rango implements OperacionesMilitares{
     public SoldadoRaso(int nivel, String nombre, String id) {
-        super(2);
+        super(1);
         this.nivel = 1; 
     }
 

@@ -36,7 +36,7 @@ public class Soldado extends Rango{
 
     //Constructor
     public Soldado(int nivel, String nombre, String id) {
-        super(1);
+        super(nivel);
         this.nombre = nombre;
         this.id = id;
             contadorSoldados++;
