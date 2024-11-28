@@ -1,4 +1,7 @@
 package CategoriasMilitares;
+import java.util.ArrayList;
+import java.util.List;
+
 import Rango.Rango;
 
 public class Soldado extends Rango{
@@ -6,6 +9,30 @@ public class Soldado extends Rango{
     private String id; 
     private static int contadorSoldados = 0;
     
+    public class SoldadoCRUD {
+    private List<Soldado> soldados = new ArrayList<>();
+
+    public void addSoldado(Soldado soldado) {
+        soldados.add(soldado);
+    }
+
+    public List<Soldado> getAllSoldados() {
+        return soldados;
+    }
+
+    public void updateSoldado(Soldado soldado) {
+        for (int i = 0; i < soldados.size(); i++) {
+            if (soldados.get(i).getId() == soldado.getId()) {
+                soldados.set(i, soldado);
+                return;
+            }
+        }
+    }
+
+    public void deleteSoldado(String id) {
+        soldados.removeIf(s -> s.getId().equals(id));
+    }
+}
 
     //Constructor
     public Soldado(int nivel, String nombre, String id) {
